@@ -17,11 +17,16 @@ You need to be able to work in a Jupyter Notebook on your computer. The followin
 - Statsmodels
 - Scipy
 ~~~~~~
-
+## Project Details
 We used three different methods to analyze whether or not to launch a new landing page:
 
-Probability
-A/B testing
-Logistic regression
+> Probability: Statistics were computed to find out the probabilities of converting regardless of page. These were used to analyze if one page or the other led to more conversions.
+
+> A/B testing: Hypothesis testing was conducted assuming the old page is better unless the new page proves to be definitely better at a Type I error rate of 5%. The data were bootstrapped and sampling distributions were determined for both pages. Conclusions were drawn on conversions for both pages by calculating p-values.
+
+> Logistic regression: Logistic regression was then performed to confirm results of the previous steps. Null and alternative hypotheses associated with this regression model were stated and verified using statsmodel.
 
 For this project, we will use the datasets, 'countries.csv' and 'ab_data.csv'. The original project was turned into Udacity as an HTML file, but I deleted it because the code is the same as in the Jupyter notebook.
+
+## Licensing, Authors, Acknowledgements
+I would like to give special thanks to Udacity for giving me the opportunity to work on this project and practice my data analysis skills. 
